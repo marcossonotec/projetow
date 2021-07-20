@@ -6,14 +6,13 @@ const dialogflow = require("./dialogflow");
 
 const sessionIds = new Map();
 
-venom.create( 'session', (base64Qrimg, asciiQR, attempts) => {}, (statusSession, session) => {}, { useChrome: false, browserArgs: ['--no-sandbox'] } ).then((client) => start(client));
 
-/*venom
+venom
   .create()
   .then((client) => start(client))
   .catch((erro) => {
     console.log(erro);
-  });*/
+  });
 
 function start(client) {
   client.onMessage(async (message) => {
