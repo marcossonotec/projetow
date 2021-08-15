@@ -1,5 +1,4 @@
-// Supports ES6
-// import { create, Whatsapp } from 'venom-bot';
+
 const uuid = require("uuid");
 const venom = require("venom-bot");
 const dialogflow = require("./dialogflow");
